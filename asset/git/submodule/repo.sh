@@ -14,6 +14,9 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# Copy
+cp .gitmodules .gitmodules_local
+
 # --> sudo port install realpath
 HOME=$(realpath ~/)
 
