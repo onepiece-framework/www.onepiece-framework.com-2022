@@ -37,7 +37,7 @@ if( empty($args) ){
 	/** Welcome page file is in "asset/template" directory.
 	 *
 	 */
-	OP::Template('welcome.phtml');
+	OP::Template('index.phtml');
 
 }else if( $args[0] === 'cd.php' ){
 
