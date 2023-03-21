@@ -13,7 +13,6 @@
  * @return    array        $config
  */
 return [
-	'layout'    => true,
 	'translate' => true,
 	'etag'      => false,
 	'markdown'  => true,
