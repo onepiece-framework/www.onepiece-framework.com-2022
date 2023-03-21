@@ -10,6 +10,10 @@
 	path = asset/layout/white
 	url = https://github.com/onepiece-framework/op-layout-white.git
 	branch = 2022
+[submodule "asset/layout/onepiece"]
+    path = asset/layout/onepiece
+    url = https://github.com/onepiece-framework/op-layout-onepiece.git
+    branch = 2022
 [submodule "asset/unit/app"]
 	path = asset/unit/app
 	url = https://github.com/onepiece-framework/op-unit-app.git
