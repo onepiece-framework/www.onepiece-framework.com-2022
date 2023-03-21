@@ -9,7 +9,7 @@
  #
 
 # branch name
-BRANCH=${1:-2022}
+BRANCH=${1:-onepiece}
 
 # Init git submodule
 # git submodule init
