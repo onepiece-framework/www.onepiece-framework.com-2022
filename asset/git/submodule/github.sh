@@ -9,7 +9,7 @@
  #
 
 # user name
-USER_NAME=${1}
+USER_NAME=${1:-TomoakiNagahara}
 
 # Check argument.
 if [ -z "$USER_NAME" ]; then
