@@ -66,3 +66,7 @@
 	path = asset/webpack/js
 	url = https://github.com/onepiece-framework/op-webpack-js.git
 	branch = 2022
+[submodule "op-module-reference"]
+	path = reference
+	url = https://github.com/onepiece-framework/op-module-reference.git
+	branch = 2022
