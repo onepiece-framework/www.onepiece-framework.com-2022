@@ -1,0 +1,96 @@
+<?php
+/**
+ * onepiece-framework.com:/index.phtml
+ *
+ * @created   2017-07-28
+ * @version   1.0
+ * @package   onepiece-framework.com
+ * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright Tomoaki Nagahara All right reserved.
+ */
+
+/** namespace
+ *
+ */
+namespace OP;
+
+//  ...
+//OP::WebPack(__DIR__.'/index.css');
+
+//	...
+$locale = Cookie::Get('locale');
+
+?>
+<?php if( $locale or true ): ?>
+<article id="top">
+	<div data-i18n="true" data-i18n-locale="en">
+		<h1>Welcome to onepiece-framework.com</h1>
+
+		<h2></h2>
+		<p>
+			The onepiece-framework is insanely great!!
+			This is very intuitive design.
+			Our before framework will obsolete.
+			This framework will destructive innovators.
+		</p>
+
+		<h2>Characteristic of "onepiece-framework".</h2>
+		<dl>
+			<dt>NewWorld</dt>
+			<dd>
+				The "New World" is a new world.
+				Everything before that becomes old.
+				You can intuitively find the "end-point".
+				This is because the URL and hierarchical file system are synchronized.
+				The "end-point" are called "controller" by old developers.<br/>
+				<br/>
+				The "New World" includes the following feature.<br/>
+				Router, Layout, Template, Html-Pass-through
+			</dd>
+			<dt>Layout</dt>
+			<dd>
+				Our "onepiece-framework" has separated "Layout" and "Template".
+				Layout is the design of the entire site.
+				That a header, footer and menu.
+				The "layout" is modularized.
+				So, you can easily introduce layout created by a third party.
+				Please do not compare with burned down igniter.
+			</dd>
+			<dt>Template</dt>
+			<dd>
+				Template is to be reused around.
+			</dd>
+			<dt>Html-Pass-through</dt>
+			<dd>
+				You do not need to make an empty controller anymore.
+				Files with the extension html are automatically executed by application.
+				Please do not compare to Symphony without conductor.
+			</dd>
+			<dt>Unit</dt>
+			<dd>
+				Our made a replaceable program as a unit.<br/>
+				<ol>
+					<li>Form</li>
+					<li>SQL</li>
+					<li>Database</li>
+					<li>ORM - Object-relational mapping</li>
+					<li>Self-test</li>
+					<li>G11n and i18n</li>
+				</ol>
+				ORM is full ORM.<br/>
+				Please do not misunderstand!! We are not stealing the ORM!!<br/>
+				ORM is all coded by me.
+			</dd>
+		</dl>
+
+		<h2>Reference &amp; Tutorial</h2>
+		<p><a href="/reference/">Reference</a><br/></p>
+		<p><span class="gray">Tutorial</span></p>
+	</div>
+</article>
+<hr/>
+<?php endif; ?>
+<section>
+	<h1>Please choose your use language</h1>
+	<?php Template('ms-language.phtml') ?>
+</section>
