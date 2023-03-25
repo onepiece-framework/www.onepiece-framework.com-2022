@@ -10,13 +10,18 @@
 
 # branch name
 UNIT=${1}
-BRANCH=${2:-2022}
+BRANCH=${2}
 URL=https://github.com/onepiece-framework/op-unit-$UNIT.git
 PATH=asset/unit/$UNIT
 
 # Validation
 if [ -z "$UNIT" ]; then
   echo 'Empty unit name. --> sh asset/git/submodule/unit/add.sh {unit_name}'
+  exit 1
+fi
+
+if [ -z "$BRANCH" ]; then
+  echo 'Empty branch name. --> sh asset/git/submodule/unit/add.sh {unit_name} {branch_name}'
   exit 1
 fi
 
