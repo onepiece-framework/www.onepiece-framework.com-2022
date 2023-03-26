@@ -13,6 +13,7 @@
  * @return    array        $config
  */
 $config = [
+    'app_id'   => 'CI',
 	'testcase' => [
 		'port' => '8000',
 	],
