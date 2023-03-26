@@ -91,6 +91,6 @@ $locale = Cookie::Get('locale');
 <hr/>
 <?php endif; ?>
 <section>
-	<h1>Please choose your use language</h1>
-	<?php Template('ms-language.phtml') ?>
+	<h1 data-translate="true">Please choose your use language</h1>
+	<?php OP()->Unit('Translate')->Language()->List('html') ?>
 </section>
