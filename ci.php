@@ -44,7 +44,7 @@ try {
 	include(__DIR__.'/asset/init.php');
 
 	//	...
-	Env::AppID('self-check');
+	Env::AppID( OP::Config('ci')['app_id'] );
 
 	//	...
 	OP::Unit('CI')->Auto();
