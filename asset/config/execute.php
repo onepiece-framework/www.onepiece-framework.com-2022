@@ -17,4 +17,5 @@ return [
 	'etag'      => false,
 	'markdown'  => true,
 	'highlight' => true,
+    'darkmode'  => true,
 ];
