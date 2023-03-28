@@ -54,6 +54,10 @@
 	path = asset/unit/cd
 	url = https://github.com/onepiece-framework/op-unit-cd.git
 	branch = onepiece
+[submodule "asset/unit/translate"]
+    path = asset/unit/translate
+    url = https://github.com/onepiece-framework/op-unit-translate.git
+    branch = onepiece
 [submodule "asset/develop"]
 	path = asset/develop
 	url = https://github.com/onepiece-framework/op-module-develop.git
