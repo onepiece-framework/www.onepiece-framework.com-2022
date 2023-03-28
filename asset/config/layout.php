@@ -23,5 +23,4 @@ namespace OP;
 return [
 	'execute'   =>  true,
 	'name'      => 'onepiece',
-	'darkmode'  =>  true,
 ];
