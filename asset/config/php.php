@@ -20,7 +20,7 @@ ini_set('display_errors','On' );
 ini_set('log_errors'    ,'Off');
 
 //	Timezone
-date_default_timezone_set('Asia/Tokyo');
+date_default_timezone_set('UTC');
 
 //	Overwrite
 if( file_exists( $path = __DIR__.'/_php.php' ) ){
