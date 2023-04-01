@@ -9,6 +9,11 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
+ /** Declare strict
+ *
+ */
+declare(strict_types=1);
+
 /** namespace
  *
  */
@@ -19,12 +24,10 @@ namespace OP;
  */
 use OP\UNIT\App;
 
-/* @var $app UNIT\App */
-
 //	...
 $app_root= ConvertURL('app:/');
-$charset = Env::Get('app')   ['charset'] ?? 'utf-8';
-$layout  = Env::Get('layout')['name']    ??  null;
+$charset = OP::Config('app')   ['charset'] ?? 'utf-8';
+$layout  = OP::Config('layout')['name']    ??  null;
 
 ?>
 	<!-- Charset -->
