@@ -13,5 +13,9 @@
  * @return    array        $config
  */
 return [
-	'directory'  => 'app:/webpack',
+    'url'  => 'app:/webpack/',
+    'directories' => [
+        'asset:/webpack/js/',
+        'asset:/webpack/css/',
+    ],
 ];
