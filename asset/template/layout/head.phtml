@@ -50,8 +50,8 @@ $hash_css = Unit('WebPack')->FileListHash('css');
 
 	<!-- Icon -->
     <link type="image/x-icon" href="<?= OP::MetaURL($icon) ?>" rel="icon" />
-	<link type="image/png"    href="<?= "{$app_root}img/icon.png" ?>"    rel="apple-touch-icon" />
-	<link type="image/png"    href="<?= "{$app_root}img/icon.png" ?>"    rel="apple-touch-icon-precomposed" />
+    <link type="image/png"    href="<?= OP::MetaURL('app:/img/icon.png') ?>" rel="apple-touch-icon" />
+    <link type="image/png"    href="<?= OP::MetaURL('app:/img/icon.png') ?>" rel="apple-touch-icon-precomposed" />
 
 	<!-- Stylesheet -->
 	<link type="text/css" href="<?= "{$app_root}css/index.css" ?>" rel="stylesheet">
