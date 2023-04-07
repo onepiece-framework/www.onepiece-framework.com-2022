@@ -33,6 +33,7 @@ if( Env::isHttp() ){
  * @return    array        $config
  */
 return [
+    'icon'      => 'app:/img/icon.png',
 	'title'     => 'onepiece-framework app skeleton 2020',
 	'copyright' => 'Copyright 2009 All right reserved.',
 	'app.phtml' =>  Env::isAdmin() ? true: false,
