@@ -26,6 +26,7 @@ use OP\UNIT\App;
 
 //	...
 $app_root= ConvertURL('app:/');
+$icon    = OP::Config('app')   ['icon']    ?? 'app:/img/favicon.ico';
 $charset = OP::Config('app')   ['charset'] ?? 'utf-8';
 $layout  = OP::Config('layout')['name']    ??  null;
 
@@ -44,7 +45,7 @@ $layout  = OP::Config('layout')['name']    ??  null;
 	<link rel="canonical" href="<?= App::Canonical() ?>" />
 
 	<!-- Icon -->
-	<link type="image/x-icon" href="<?= "{$app_root}img/favicon.ico" ?>" rel="icon" />
+    <link type="image/x-icon" href="<?= OP::MetaURL($icon) ?>" rel="icon" />
 	<link type="image/png"    href="<?= "{$app_root}img/icon.png" ?>"    rel="apple-touch-icon" />
 	<link type="image/png"    href="<?= "{$app_root}img/icon.png" ?>"    rel="apple-touch-icon-precomposed" />
 
