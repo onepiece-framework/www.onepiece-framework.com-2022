@@ -46,6 +46,9 @@ try {
 	//	...
 	Env::AppID( OP::Config('ci')['app_id'] );
 
+	// ...
+	OP::Unit('Git')->Save();
+
 	//	...
 	OP::Unit('CI')->Auto();
 
@@ -67,6 +70,9 @@ try {
 	//	...
 	$exit = __LINE__;
 }
+
+// ...
+OP::Unit('Git')->Pop();
 
 //	exit
 exit($exit);
