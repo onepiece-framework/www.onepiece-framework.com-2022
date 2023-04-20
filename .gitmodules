@@ -58,6 +58,10 @@
     path = asset/unit/translate
     url = https://github.com/onepiece-framework/op-unit-translate.git
     branch = onepiece
+[submodule "asset/unit/model"]
+    path = asset/unit/model
+    url = https://github.com/onepiece-framework/op-unit-model.git
+    branch = master
 [submodule "asset/develop"]
 	path = asset/develop
 	url = https://github.com/onepiece-framework/op-module-develop.git
