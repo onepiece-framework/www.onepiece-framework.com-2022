@@ -2,7 +2,7 @@ Xhprof
 ===
 
 Xhprof is hierarchical profiling tool.
-PHP 7.0 higher uses tideways.
+PHP 7.0 higher uses "tideways".
 
 Official
 https://www.php.net/manual/en/book.xhprof.php
