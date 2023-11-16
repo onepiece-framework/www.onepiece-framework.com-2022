@@ -64,9 +64,30 @@
  The onepiece-framework's NEW WORLD is does not need a controller.
  Of course it will be doing layout.
 
+# Technical information
+
+## Rules
+
+### Git
+
+#### File name
+
+ Please see ".gitignore" file.
+ ".\*" and "_\*" are added.
+ A file whose file name starts with dot or underscore is not committed.
+ This specification is useful if you do not want to include files in your repository.
+
+ If you want to commit that files, Use the "-f" option.
+
+```sh
+git add -f .gitkeep
+```
+
 # Apology
 
+ <!--
  * Microsoft Windows products is not support
+ -->
 
 ## Microsoft Windows products is not support
 
